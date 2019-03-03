@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Koululaskin</title>
+		<style>
+			body {
+				background-image: url("https://i.pinimg.com/originals/55/0c/80/550c80a326b9d687b038b5f5f72b0724.jpg");
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-size: 100% 100%;
+			}
+			#n {
+				transition: background 0.5s ease-out;
+				text-align: right;
+				width: 175%;
+				height: 85px;
+				font-size: 35px;
+				background-color: Transparent;
+				color: white;
+				border-radius: 5px;
+			}
+			.button {
+				cursor: pointer;
+				transition: background-color 0.5s ease-out;
+				color: 0.5s ease-out;
+				width: 134px;
+				height: 80px;
+				border-radius: 5px;
+				font-size: 25px;
+				background-color: Transparent;
+				color: white
+			}
+			.button:hover {
+				background-color: white;
+				color: black;
+			}
+			#laskin {
+				position: absolute;
+				left: 17%;
+				top: 20%;
+			}
+		</style>
+		<script>
+			function playSound () {
+				document.getElementById('play').play();
+			}
+		</script>
+	</head>
+	<body>
+		<audio id="play" src="Sound you want to play when button is clicked"></audio>
+		<!--<audio id="play" src="C:\Users\escaosc\Downloads\ROBLOX EARRAPE 1 (1).mp3"></audio>-->
+		<form name="l" id="laskin">
+			<table>
+				<tr>
+					<td colspan="4">
+						<input type="text" name="n" id="n" disabled>
+					</td>
+				</tr>
+				<tr>
+					<td><input type="button" value="(" class="button sulku1" onclick="l.n.value+='('; playSound()"></td>
+					<td><input type="button" value=")" class="button sulku2" onclick="l.n.value+=')'; playSound()"></td>
+					<td><input type="button" value="10^x" class="button 10^x" onclick="l.n.value=Math.pow(10, l.n.value); playSound(); aareton()"></td>
+					<td><input type="button" value="C" class="button C" onclick="l.n.value=''; playSound()"></td>
+					<td><input type="button" value="+/-" class="button Plusmiinus" onclick="l.n.value*=-1; playSound()"></td>
+					<td><input type="button" value="%" class="button Sadasosa" onclick="l.n.value=l.n.value / 100; playSound()"></td>
+					<td><input type="button" value="/" class="button /" onclick="l.n.value+='/'; playSound()"></td>
+				</tr>
+				<tr>
+					<td><input type="button" value="0-1" class="button Random" onclick="l.n.value=Math.random(); playSound()"></td>
+					<td><input type="button" value="x^2" class="button x^2" onclick="l.n.value=Math.pow(l.n.value, 2); playSound()"></td>
+					<td><input type="button" value="x^3" class="button x^3" onclick="l.n.value=Math.pow(l.n.value, 3); playSound()"></td>
+					<td><input type="button" value="7" class="button 7" onclick="l.n.value+='7'; playSound()"></td>
+					<td><input type="button" value="8" class="button 8" onclick="l.n.value+='8'; playSound()"></td>
+					<td><input type="button" value="9" class="button 9" onclick="l.n.value+='9'; playSound()"></td>
+					<td><input type="button" value="*" class="button *" onclick="l.n.value+='*'; playSound()"></td>
+				</tr>
+				<tr>
+					<td><input type="button" value="ln(x)" class="button Logaritmi" onclick="l.n.value=Math.log(l.n.value); playSound()"></td>
+					<td><input type="button" value="e^x" class="button e^x" onclick="l.n.value=Math.exp(l.n.value); playSound()"></td>
+					<td><input type="button" value="&radic;x" class="button Neliöjuuri" onclick="l.n.value=Math.sqrt(l.n.value); playSound()"></td>
+					<td><input type="button" value="4" class="button 4" onclick="l.n.value+='4'; playSound()"></td>
+					<td><input type="button" value="5" class="button 5" onclick="l.n.value+='5'; playSound()"></td>
+					<td><input type="button" value="6" class="button 6" onclick="l.n.value+='6'; playSound()"></td>
+					<td><input type="button" value="-" class="button -" onclick="l.n.value+='-'; playSound()"></td>
+				</tr>
+				<tr>
+					<td><input type="button" value="sin(x)" class="button sin" onclick="l.n.value=Math.sin(l.n.value * Math.PI / 180); playSound()"></td>
+					<td><input type="button" value="cos(x)" class="button cos" onclick="l.n.value=Math.cos(l.n.value * Math.PI / 180); playSound()"></td>
+					<td><input type="button" value="3&radic;x" class="button Kuutiojuuri" onclick="l.n.value=Math.cbrt(l.n.value); playSound()"></td>
+					<td><input type="button" value="1" class="button 1" onclick="l.n.value+='1'; playSound()"></td>
+					<td><input type="button" value="2" class="button 2" onclick="l.n.value+='2'; playSound()"></td>
+					<td><input type="button" value="3" class="button 3" onclick="l.n.value+='3'; playSound()"></td>
+					<td><input type="button" value="+" class="button +" onclick="l.n.value+='+'; playSound()"></td>
+				</tr>
+				<tr>
+					<td><input type="button" value="tan(x)" class="button tan" onclick="l.n.value=Math.tan(l.n.value * Math.PI / 180); playSound()"></td>
+					<td><input type="button" value="1/x" class="button 1/x" onclick="l.n.value=1 / l.n.value; playSound()"></td>
+					<td><input type="button" value="e" class="button e" onclick="l.n.value=Math.E; playSound()"></td>
+					<td><input type="button" value="π" class="button Pii" onclick="l.n.value=Math.PI; playSound()"></td>
+					<td><input type="button" value="0" class="button 0" onclick="l.n.value+='0'; playSound()"></td>
+					<td><input type="button" value="." class="button Piste" onclick="l.n.value+='.'; playSound()"></td>
+					<td><input type="button" value="=" class="button =" onclick="l.n.value=eval(l.n.value); playSound()"></td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
